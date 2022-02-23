@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "../Pages/styles/style-navbar.css";
+import "./style-navbar.css";
 import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
@@ -11,7 +11,7 @@ export default function NavBar() {
   return (
     <>
       <div className={click ? "main-container" : ""} onClick={() => Close()} />
-      <nav className="navbar" onClick={(e) => e.stopPropagation()}>
+      <nav className="navbar" onClick={(e) => e()}>
         <div className="nav-container">
           <NavLink exact to="/Home" className="nav-logo">
             Justin.Hartsink
