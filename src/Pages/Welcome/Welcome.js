@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
-import "../styles/Welcome.css";
 import gsap from "gsap";
+import "../../styles/welcome-styles.css";
 import { NavLink } from "react-router-dom";
 
 function Welcome() {
