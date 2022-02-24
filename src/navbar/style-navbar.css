@@ -3,8 +3,6 @@
   padding: 0;
 }
 
-
-
 .navbar {
   background-color: rgb(4, 42, 43);
   height: 80px;
@@ -86,7 +84,7 @@
   color: #ef7b45;
   border: 1px solid #ef7b45;
 }
-.nav-item:focus{
+.nav-item:focus {
   border: 1px solid #ef7b45;
 }
 .nav-icon {

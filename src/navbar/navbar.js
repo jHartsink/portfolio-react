@@ -11,17 +11,15 @@ export default function NavBar() {
   return (
     <>
       <div className={click ? "main-container" : ""} onClick={() => Close()} />
-      <nav className="navbar" onClick={(e) => e()}>
+      <nav className="navbar">
         <div className="nav-container">
-          <NavLink exact to="/Home" className="nav-logo">
+          <NavLink to="/" className="nav-logo">
             Justin.Hartsink
           </NavLink>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
-                exact
-                to="/"
-                activeClassName="active"
+                to="/Home"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
@@ -30,9 +28,7 @@ export default function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                exact
                 to="/about"
-                activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
@@ -41,9 +37,7 @@ export default function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                exact
                 to="/projects"
-                activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
@@ -52,9 +46,7 @@ export default function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                exact
                 to="/contact"
-                activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
