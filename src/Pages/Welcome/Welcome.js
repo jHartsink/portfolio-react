@@ -9,20 +9,20 @@ function Welcome() {
 
   useEffect(() => {
     gsap.from(loader1.current, {
-      delay: 0.3,
-      duration: 3,
+      delay: 0.7,
+      duration: 1.75,
       y: "-100%",
+      ease: "power1.easeOut",
 
-      yoyo: true,
       opacity: 0,
     });
   });
   useEffect(() => {
     gsap.to(TextReveal.current, {
-      delay: 3.3,
+      delay: 2.3,
       opacity: 1,
       duration: 2,
-      ease: "power4.inOut",
+      ease: "power1.inOut",
     });
   });
   return (

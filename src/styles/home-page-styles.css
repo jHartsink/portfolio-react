@@ -19,31 +19,34 @@ img {
   object-fit: cover;
 }
 .hero-text {
-    color: #cdedf6;
-  }
-  h1 {
-    position: relative;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 2vw;
-    font-weight: bold;
-    overflow: hidden;
-  }
-  .box {
-    position: absolute;
-    bottom: 0;
-    display: inline-block;
-    height: 1vw;
-    z-index: -1;
-  }
-  .hi {
-    display: inline-block;
-  }
-  
+  color: #cdedf6;
+}
+h1 {
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 6vw;
+  font-weight: bold;
+  overflow: hidden;
+}
+.box {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  height: 1vw;
+  z-index: -1;
+}
+.hi {
+  display: inline-block;
+}
+
 @media screen and (min-width: 768px) {
   .cta-wrapper {
     flex-direction: row;
   }
   .visual-wrapper {
     inline-size: min(315px, 100%);
+  }
+  h1 {
+    font-size: 2vw;
   }
 }
