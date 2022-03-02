@@ -3,6 +3,7 @@
   min-block-size: 100%;
   display: grid;
   place-items: center;
+  opacity: 0;
 }
 
 .visual-wrapper {

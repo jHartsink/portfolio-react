@@ -12,6 +12,7 @@ export default function WelcomeText() {
   const box = useRef();
   const text = useRef();
   const hi = useRef();
+  const mainContent = useRef();
 
   const words = [
     " Justin.",
@@ -30,7 +31,6 @@ export default function WelcomeText() {
           text: word,
         });
       }
-      console.log(text.current);
       masterTl.add(tl);
     });
 
@@ -81,11 +81,18 @@ export default function WelcomeText() {
         repeat: -1,
       });
     }
+    if (mainContent.current) {
+      gsap.to(mainContent.current, {
+        delay: 1,
+        opacity: 1,
+        ease: "power2.inOut",
+      });
+    }
   }, []);
 
   return (
     <>
-      <div className="main-content">
+      <div ref={mainContent} className="main-content">
         <div className="visual-wrapper">
           <img
             src="https://www.w3schools.com/w3css/img_avatar3.png"
