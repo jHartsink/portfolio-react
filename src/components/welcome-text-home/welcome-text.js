@@ -95,7 +95,7 @@ export default function WelcomeText() {
       <div ref={mainContent} className="main-content">
         <div className="visual-wrapper">
           <img
-            src="https://www.w3schools.com/w3css/img_avatar3.png"
+            src="https://media-exp1.licdn.com/dms/image/C5603AQEiB9m0yH7IZg/profile-displayphoto-shrink_800_800/0/1635255797317?e=1651708800&v=beta&t=RSZBooa7wHMV2ghU0A61Njtuflda5JVT2Z7n98ISFNk"
             alt="myImage"
           />
         </div>

@@ -29,7 +29,7 @@ function Welcome() {
     <>
       <div className="content-wrapper">
         <div className="background-drop" ref={loader1}>
-          <NavLink className="Text" exact to="/Home" ref={TextReveal}>
+          <NavLink className="Text" to="/Home" ref={TextReveal}>
             Welcome
           </NavLink>
         </div>
