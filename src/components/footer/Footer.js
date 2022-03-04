@@ -32,7 +32,7 @@ useEffect(() => {
             {" "}
             <FaLinkedin />{" "}
           </a>
-          <a href="https://github.com/ryuk878" target="_blank" rel="noreferrer">
+          <a href="https://github.com/jHartsink" target="_blank" rel="noreferrer">
             {" "}
             <FaGithub />{" "}
           </a>
