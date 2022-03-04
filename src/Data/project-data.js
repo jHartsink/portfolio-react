@@ -24,6 +24,18 @@ const ProjectData = [
     img: "https://live.staticflickr.com/65535/51917924010_40e50c663b_k.jpg",
     href: "https://react-webshop-31b32.web.app/",
   },
+  {
+    name: "CSS Drawing",
+    title: "CSS drawing of Kirby",
+    img: "https://live.staticflickr.com/65535/51918210980_4183e95c1c_k.jpg",
+    href: "https://brave-poitras-f3e00d.netlify.app/",
+  },
+  {
+    name: "Canvas",
+    title: "Canvas Welcome screen + drawing",
+    img: "https://live.staticflickr.com/65535/51917703853_6854e8725c_k.jpg",
+    href: "https://nifty-villani-b58c99.netlify.app/",
+  },
 ];
 
 export default ProjectData;
