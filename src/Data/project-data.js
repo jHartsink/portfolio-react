@@ -14,14 +14,14 @@ const ProjectData = [
   {
     name: "Countdown",
     title: "A vanilla JS countdown",
-    img: "./Images/ReactWebshop.png",
+    img: "./Images/Beertime.png",
     href: " https://optimistic-einstein-c28751.netlify.app/",
   },
 
   {
     name: "React-webshop",
     title: "A webshop based on React",
-    img: "./Images/Beertime.png",
+    img: "./Images/ReactWebshop.png",
     href: "https://react-webshop-31b32.web.app/",
   },
   {
