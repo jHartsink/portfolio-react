@@ -5,20 +5,18 @@ import { FaGithub } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
 import gsap from "gsap";
 
-
 export default function Footer() {
-  
   const footer = useRef();
 
-useEffect(() => {
-  if (footer.current) {
-    gsap.to(footer.current, {
-      delay: 1,
-      opacity: 1,
-      ease: "power2.inOut",
-    });
-  }
-});
+  useEffect(() => {
+    if (footer.current) {
+      gsap.to(footer.current, {
+        delay: 1,
+        opacity: 1,
+        ease: "power2.inOut",
+      });
+    }
+  });
 
   return (
     <>
@@ -32,7 +30,11 @@ useEffect(() => {
             {" "}
             <FaLinkedin />{" "}
           </a>
-          <a href="https://github.com/jHartsink" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/jHartsink"
+            target="_blank"
+            rel="noreferrer"
+          >
             {" "}
             <FaGithub />{" "}
           </a>

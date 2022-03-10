@@ -22,14 +22,12 @@ export default function Project() {
     <>
       <div className="project-wrapper" ref={projects}>
         {db.map((project) => (
-          <div className="inner-wrap">
-            <div key={project.name} className="title">
-              <div className="img">
-                <a target={"_Blank"} href={project.href} rel="noreferrer">
-                  <img src={project.img} alt="img"></img>
-                </a>
-                <p>{project.title}</p>
-              </div>
+          <div key={project.name} className="title">
+            <div className="img">
+              <a target={"_Blank"} href={project.href} rel="noreferrer">
+                <img src={project.img} alt="img"></img>
+              </a>
+              <p>{project.title}</p>
             </div>
           </div>
         ))}

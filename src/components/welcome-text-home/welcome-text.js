@@ -3,9 +3,17 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import TextPlugin from "gsap/TextPlugin";
 import "../../styles/welcome-styles.css";
+import ImageHome from "../atoms/image/image-home";
 
 gsap.registerPlugin(TextPlugin);
-
+const words = [
+  " Justin.",
+  " A Developer.",
+  " A Photographer.",
+  " A Trainee.Monk.",
+];
+// proberen if statements te verminderen in timeline. //
+// betere naming voor temp timeline//
 export default function WelcomeText() {
   let masterTl = useRef();
   const cursor = useRef();
@@ -14,12 +22,6 @@ export default function WelcomeText() {
   const hi = useRef();
   const mainContent = useRef();
 
-  const words = [
-    " Justin.",
-    " A Developer.",
-    " A Photographer.",
-    " A Trainee.Monk.",
-  ];
   useEffect(() => {
     masterTl = gsap.timeline({ delay: 2 });
     words.forEach((word) => {
@@ -94,7 +96,7 @@ export default function WelcomeText() {
     <>
       <div ref={mainContent} className="main-content">
         <div className="visual-wrapper">
-          <img
+          <ImageHome
             src="https://media-exp1.licdn.com/dms/image/C5603AQEiB9m0yH7IZg/profile-displayphoto-shrink_800_800/0/1635255797317?e=1651708800&v=beta&t=RSZBooa7wHMV2ghU0A61Njtuflda5JVT2Z7n98ISFNk"
             alt="myImage"
           />

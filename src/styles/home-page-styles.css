@@ -33,7 +33,7 @@ h1 {
   position: absolute;
   bottom: 0;
   display: inline-block;
-  height: 1vw;
+  height: 1vh;
   z-index: -1;
 }
 .hi {
