@@ -40,15 +40,6 @@ export default function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/about"
-                className="nav-links"
-                onClick={click ? handleClick : null}
-              >
-                About
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
                 to="/projects"
                 className="nav-links"
                 onClick={click ? handleClick : null}

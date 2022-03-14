@@ -21,13 +21,13 @@ export default function Project() {
   return (
     <>
       <div className="project-wrapper" ref={projects}>
-        {db.map((project) => (
-          <div key={project.name} className="title">
+        {db.map(({name,href,img,title, alt}) => (
+          <div key={name} className="title">
             <div className="img">
-              <a target={"_Blank"} href={project.href} rel="noreferrer">
-                <img src={project.img} alt="img"></img>
+              <a target={"_blank"} href={href} rel="noreferrer">
+                <img src={img} alt={alt}></img>
               </a>
-              <p>{project.title}</p>
+              <p>{title}</p>
             </div>
           </div>
         ))}
